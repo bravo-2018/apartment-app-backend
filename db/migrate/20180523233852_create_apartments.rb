@@ -12,6 +12,7 @@ class CreateApartments < ActiveRecord::Migration[5.2]
       t.string :phone
       t.string :hours
       t.string :status
+      t.belongs_to :user, index: true
 
       t.timestamps
     end
